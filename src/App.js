@@ -18,7 +18,7 @@ export default function App() {
                 <div id="appContainer">
                     <Navbar />
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/deploy" element={<Home />} />
                         <Route path="/browse" element={<Browse />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/work" element={<Works />} />
