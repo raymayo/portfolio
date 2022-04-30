@@ -1,0 +1,15 @@
+@import "../index.css";
+
+.back h1 {
+  font-size: 0.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: Organetto-Light;
+  color: var(--primaryColor);
+}
+
+.back a {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+

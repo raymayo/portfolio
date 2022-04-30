@@ -1,0 +1,49 @@
+@import '../index.css';
+
+#workContainer{
+  display: flex;
+  flex-direction:column;
+}
+
+#workContainer *{
+     color: var(--primaryColor);
+}
+
+#projectContainer{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+  padding-top:.52em;
+}
+
+
+.projectCase{
+width: auto;
+height: auto;
+padding-bottom:.2em;
+margin-bottom:.5em;
+
+}
+
+.imageCase{
+  background-color: #C4C4C4;
+  width:31vw;
+  height:29vh;
+  cursor: pointer;
+}
+
+.projectTitle{
+  font-size:.6em;
+  padding: .3em .3em;
+  font-family: Organetto-Regular;
+}
+
+.projectSub{
+  font-size:.35em;
+  padding: .3em .5em;
+  font-family: Organetto-Light;
+}
+
+
+

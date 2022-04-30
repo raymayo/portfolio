@@ -1,0 +1,122 @@
+@import "../index.css";
+
+#homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: auto;
+}
+
+#homeContainer * {
+  color: var(--primaryColor);
+}
+
+#mainContent {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Organetto-Bold;
+}
+
+.mainTitle {
+  font-size: 4em;
+  line-height: 0.5em;
+  white-space: pre;
+  text-align: center;
+}
+
+.subtext {
+  font-size: 0.79em;
+  margin: 1em;
+  font-family: Organetto-Light;
+}
+
+#lowerText {
+  text-align: center;
+  margin: 2% 0;
+  font-size: 0.4em;
+}
+
+#lowerText h3 {
+  font-family: Organetto-Light;
+}
+
+#view h1 {
+  font-size: 0.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+    font-family: Organetto-Light;
+}
+
+#view a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 320px) and (orientation: portrait) {
+  .mainTitle {
+    font-size: 6em;
+    line-height: 55%;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  #lowerText {
+  font-size: .8em;
+}
+
+#view h1 {
+  font-size: 2em;
+}
+#view {
+  margin: 10% 0;
+}
+
+}
+
+/* @media (min-width: 375px) and (orientation: portrait) {
+  .mainTitle {
+    font-size: 6em;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  #lowerText {
+  font-size: .8em;
+}
+
+#view h1 {
+  font-size: 2em;
+}
+#view {
+  margin: 10% 0;
+}
+
+} */
+
+@media (min-width: 320px) and (max-width:1024px) and (orientation: landscape) {
+  #view h1 {
+  font-size: 1em;
+}
+
+  #lowerText {
+  font-size: .5em;
+}
+}
+
+@media (width: 812px) and (height: 375px){
+  #view {
+  padding: 2% 0;
+}
+}
+
