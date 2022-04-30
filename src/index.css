@@ -49,7 +49,6 @@ html{
   height:100vh;
   background-image: url('/public/back2.svg');
   background-size: 110vw;
-  border: 1px solid magenta;
 }
 
 #appContainer{
