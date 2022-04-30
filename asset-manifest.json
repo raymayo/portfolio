@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/deploy/static/css/main.d1e3ea40.css",
-    "main.js": "/deploy/static/js/main.9f0d5865.js",
+    "main.js": "/deploy/static/js/main.530c51a9.js",
     "static/media/Organetto-RegularSemiExt.ttf": "/deploy/static/media/Organetto-RegularSemiExt.63464889fe9fd601179c.ttf",
     "static/media/Organetto-RegularExt.ttf": "/deploy/static/media/Organetto-RegularExt.3be94e5e9455b85f547b.ttf",
     "static/media/Organetto-UltraBoldSemiExp.ttf": "/deploy/static/media/Organetto-UltraBoldSemiExp.efd5054fa90592a37a5e.ttf",
@@ -9,10 +9,10 @@
     "index.html": "/deploy/index.html",
     "static/media/logo.svg": "/deploy/static/media/logo.bc45e755f12d9eb9a905365c687cf8eb.svg",
     "main.d1e3ea40.css.map": "/deploy/static/css/main.d1e3ea40.css.map",
-    "main.9f0d5865.js.map": "/deploy/static/js/main.9f0d5865.js.map"
+    "main.530c51a9.js.map": "/deploy/static/js/main.530c51a9.js.map"
   },
   "entrypoints": [
     "static/css/main.d1e3ea40.css",
-    "static/js/main.9f0d5865.js"
+    "static/js/main.530c51a9.js"
   ]
 }
