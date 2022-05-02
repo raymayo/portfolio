@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Browse from './Components/Browse';
@@ -12,20 +12,33 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 export default function App() {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
+    }, [])
     return (
         <BrowserRouter>
             <div id="webContainer">
-                <div id="appContainer">
-                    <Navbar />
-                    <Routes>
-                        <Route path="/portfolio" element={<Home />} />
-                        <Route path="/browse" element={<Browse />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/work" element={<Works />} />
-                        <Route path="/social" element={<Socials />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                </div>
+                {
+                    loading ?
+                        <div>loading</div>
+                        :
+                        <div id="appContainer">
+                            <Navbar />
+                            <Routes>
+                                <Route path="/portfolio" element={<Home />} />
+                                <Route path="/browse" element={<Browse />} />
+                                <Route path="/about" element={<About />} />
+                                <Route path="/work" element={<Works />} />
+                                <Route path="/social" element={<Socials />} />
+                                <Route path="/contact" element={<Contact />} />
+                            </Routes>
+                        </div>
+                }
             </div>
         </BrowserRouter>
 
