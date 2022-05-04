@@ -1,6 +1,4 @@
-#loaderContainer *{
-    border: solid 1px red;
-}
+
 
 #loaderContainer {
     align-self: center;
@@ -8,3 +6,8 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 320px) and (orientation: portrait) {
+    
+}
+

@@ -15,7 +15,7 @@ const Loader = () => {
 
     return (
         <div id={loaderCss.loaderContainer}>
-            <Lottie options={defaultOptions} height={600} width={600} />
+            <Lottie id={loaderCss.lottie} options={defaultOptions} height={600} width={600} />
         </div>
     )
 }
