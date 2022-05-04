@@ -50,6 +50,14 @@ html{
   height: calc(var(--vh, 1vh) * 100);
   background-image: url('/public/back2.svg');
   background-size: 110vw;
+  border: solid 1px magenta;
+display:flex;
+flex-direction: column;
+  justify-content:center;
+}
+
+#webContainer *{
+    border: solid 1px blue;
 }
 
 #appContainer{

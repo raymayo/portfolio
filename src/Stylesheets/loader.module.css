@@ -1,0 +1,10 @@
+#loaderContainer *{
+    border: solid 1px red;
+}
+
+#loaderContainer {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

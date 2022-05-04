@@ -6,6 +6,7 @@ import About from './Components/About';
 import Works from './Components/Works';
 import Socials from './Components/Socials';
 import Contact from './Components/Contact';
+import Loader from './Components/Loader';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
@@ -26,7 +27,7 @@ export default function App() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false)
-        }, 3000)
+        }, 4000)
     }, []);
 
     return (
@@ -34,7 +35,7 @@ export default function App() {
             <div id="webContainer">
                 {
                     loading ?
-                        <div>loading</div>
+                        <Loader />
                         :
                         <div id="appContainer">
                             <Navbar />
