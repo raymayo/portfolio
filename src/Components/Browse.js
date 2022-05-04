@@ -31,7 +31,7 @@ const Browse = () => {
                 </div>
             </div>
             <div className={browseCss.back}>
-                <h1><Link to="/">EXIT</Link></h1>
+                <h1><Link to="/portfolio">EXIT</Link></h1>
             </div>
         </div>
     )

@@ -17,6 +17,7 @@
     justify-content:center;
     align-items:center;
 
+
 }
 
 #browseContainer h1 {
@@ -28,20 +29,18 @@
 }
 
 .linkContainer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
   line-height: 2.5em;
 }
-
 .back h1 {
   font-size: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;
   font-family: Organetto-Light;
-     color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 .back a {
@@ -107,12 +106,16 @@ a {
      color: var(--primaryColor);
 }
 
+.back{
+  width: 100%;
+  height: auto;
+}
+
 
 @media (min-width: 320px) and (orientation: portrait) {
   #tabContainer{
-    font-size: 1.45em;
+    font-size: 1.3em;
   }
-
   .back{
      margin: 11% 0;
 
