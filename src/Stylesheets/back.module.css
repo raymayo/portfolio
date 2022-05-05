@@ -1,6 +1,11 @@
 @import "../index.css";
 
-.back h1 {
+#back{
+  display: flex;
+  justify-content: center;
+}
+
+#back h1 {
   font-size: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;
@@ -8,8 +13,46 @@
   color: var(--primaryColor);
 }
 
-.back a {
+#back a {
   color: var(--primaryColor);
   text-decoration: none;
+}
+
+#back h1:before,
+#back h1:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.18em;
+  top: 50%;
+  margin-top: -0.5px;
+  background: var(--secondaryColor);
+}
+
+#back h1 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#back h1:before {
+  left: -4.5px;
+}
+#back h1:after {
+  right: 2.5px;
+  background: var(--secondaryColor);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#back h1:hover:before {
+  background: var(--secondaryColor);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#back h1:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 

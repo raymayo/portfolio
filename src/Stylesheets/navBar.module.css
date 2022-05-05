@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+#Logo{
+  fill: var(--primaryColor);
+}
+
 #logoLink {
   width: 1em;
   height: 1em;
@@ -20,7 +24,6 @@ img {
 #resume {
   font-size: 0.6em;
   font-family: Organetto-Regular;
-  font-weight: regular;
   align-self: center;
   cursor: pointer;
   text-decoration: none;

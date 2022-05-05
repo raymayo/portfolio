@@ -30,7 +30,7 @@ const Browse = () => {
                     </div>
                 </div>
             </div>
-            <div className={browseCss.back}>
+            <div id={browseCss.exit}>
                 <h1><Link to="/portfolio">EXIT</Link></h1>
             </div>
         </div>

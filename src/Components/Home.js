@@ -18,9 +18,9 @@ const Home = () => {
                     <h3>GRAPHIC DESIGN / WEB DEVELOPMENT</h3>
                 </div>
             </div>
-            <footer id={homeCss.view}>
+            <div id={homeCss.view}>
                 <h1><Link to="/browse">VIEW</Link></h1>
-            </footer>
+            </div>
         </div>
     )
 }

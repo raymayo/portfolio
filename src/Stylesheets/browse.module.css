@@ -35,7 +35,7 @@
   align-items:center;
   line-height: 2.5em;
 }
-.back h1 {
+#exit h1 {
   font-size: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;
@@ -43,7 +43,7 @@
   color: var(--primaryColor);
 }
 
-.back a {
+#exit a {
      color: var(--primaryColor);
   text-decoration: none;
 }
@@ -91,6 +91,50 @@
   transition: 0s;
 }
 
+
+
+
+
+
+
+#exit h1:before,
+#exit h1:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.18em;
+  top: 50%;
+  margin-top: -0.5px;
+  background: var(--secondaryColor);
+}
+
+#exit h1 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#exit h1:before {
+  left: -4.5px;
+}
+#exit h1:after {
+  right: 2.5px;
+  background: var(--secondaryColor);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#exit h1:hover:before {
+  background: var(--secondaryColor);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#exit h1:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
 a {
   text-decoration: none;
   color: var(--primaryColor);
@@ -106,22 +150,19 @@ a {
      color: var(--primaryColor);
 }
 
-.back{
-  width: 100%;
-  height: auto;
-}
+
 
 
 @media (min-width: 320px) and (orientation: portrait) {
   #tabContainer{
     font-size: 1.3em;
   }
-  .back{
+  #exit{
      margin: 11% 0;
 
   }
 
-  .back h1{
+  #exit h1{
     font-size: 1.5em;
   }
 }

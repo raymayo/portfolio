@@ -4,7 +4,7 @@ import backCss from '../Stylesheets/back.module.css'
 
 const Back = () => {
     return (
-        <div className={backCss.back}>
+        <div id={backCss.back}>
             <Link to='/browse'>
                 <h1>BACK</h1>
             </Link>
