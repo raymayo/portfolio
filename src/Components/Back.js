@@ -5,9 +5,7 @@ import backCss from '../Stylesheets/back.module.css'
 const Back = () => {
     return (
         <div id={backCss.back}>
-            <Link to='/browse'>
-                <h1>BACK</h1>
-            </Link>
+            <h1><Link to='/browse'>BACK</Link></h1>
         </div>
     )
 }

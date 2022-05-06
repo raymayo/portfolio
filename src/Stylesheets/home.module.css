@@ -131,28 +131,6 @@
 
 }
 
-/* @media (min-width: 375px) and (orientation: portrait) {
-  .mainTitle {
-    font-size: 6em;
-  }
-
-  .subtext {
-    font-size: 1.2em;
-  }
-
-  #lowerText {
-  font-size: .8em;
-}
-
-#view h1 {
-  font-size: 2em;
-}
-#view {
-  margin: 10% 0;
-}
-
-} */
-
 @media (min-width: 320px) and (max-width:1024px) and (orientation: landscape) {
   #view h1 {
   font-size: 1em;

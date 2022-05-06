@@ -5,16 +5,28 @@ import aboutCss from '../Stylesheets/about.module.css'
 const About = () => {
     return (
         <div id={aboutCss.aboutContainer}>
-            <div id={aboutCss.intro}>
-                <h1>I’m <b>Ray Mayo</b></h1>
-                <h1>A 20 y/o self-taught graphic designer *slash* front end developer based in the Philippines.</h1>
-            </div>
-            <div id="skillsContainer">
-                <div id="graphicSkills">
-                    <h1 className="title"></h1>
+            <div id={aboutCss.content}>
+                <div id={aboutCss.intro}>
+                    <h1>I’m <b>Ray Mayo</b></h1>
+                    <h2>A 20 y/o self-taught graphic designer *slash* front end developer based in the Philippines.</h2>
                 </div>
-                <div id="webSkills">
-                    <h1 className="title"></h1>
+                <div id={aboutCss.skillsContainer}>
+                    <div className={aboutCss.skillsTable}>
+                        <h1 className={aboutCss.title}>Design Tools</h1>
+                        <div className={aboutCss.list}>
+                            <ul>Skills</ul>
+                            <ul>Skills</ul>
+                            <ul>Skills</ul>
+                        </div>
+                    </div>
+                    <div className={aboutCss.skillsTable}>
+                        <h1 className={aboutCss.title}>Web Dev Tools</h1>
+                        <div className={aboutCss.list}>
+                            <ul>Skills</ul>
+                            <ul>Skills</ul>
+                            <ul>Skills</ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Back />

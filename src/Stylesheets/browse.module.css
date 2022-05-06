@@ -159,12 +159,19 @@ a {
     font-size: 1.3em;
   }
   #exit{
-     margin: 11% 0;
+     margin: 10% 0;
 
   }
 
   #exit h1{
     font-size: 1.5em;
   }
+}
+
+@media (min-width: 320px) and (max-width:1024px) and (orientation: landscape) {
+  #exit h1 {
+  font-size: 1em;
+}
+
 }
 
