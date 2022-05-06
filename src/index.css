@@ -24,20 +24,18 @@
 
 :root{
   --primaryColor:#0D1321;
-  --secondaryColor:#574AE2;
+  --secondaryColor:#6f49e8;
   --bgColor: #E7E9E9;
 }
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
     overflow: hidden;
 }
 
 html{
-  min-height: -webkit-fill-available;
+  overflow: hidden;
   font-size: 2vw;
 }
 

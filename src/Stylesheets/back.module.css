@@ -23,12 +23,12 @@
   content: "";
   position: absolute;
   width: 0%;
-  height: 0.18em;
-  top: 50%;
+  height: .3em;
+  top: 39%;
   margin-top: -0.5px;
   background: var(--secondaryColor);
+  pointer-events: none;
 }
-
 #back h1 {
   position: relative;
   display: block;
