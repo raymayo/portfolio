@@ -8,6 +8,10 @@
     color: var(--primaryColor);
 }
 
+#content *{
+    display:none;
+}
+
 #content{
     height: 100%;
     padding: 2%;
@@ -28,7 +32,7 @@ b{
 
 #intro{
     background: var(--bgColor);
-    border: solid 2px var(--primaryColor);
+    border: solid 2px var(--outlineColor);
     padding: 2%;
     border-radius: 1px;
     margin-bottom: 2%;
@@ -58,7 +62,7 @@ b{
 .skillsTable{
     height:30vh;
     width:46%;
-    border: solid 2px var(--primaryColor);
+    border: solid 2px var(--outlineColor);
     background-color: var(--bgColor);
 }
 
@@ -67,7 +71,7 @@ b{
     font-size: .6em;
     padding: 3%;
     background-color: var(--bgColor);
-    border-bottom: solid 2px var(--primaryColor);
+    border-bottom: solid 2px var(--outlineColor);
     margin-bottom: 2%;
     color: var(--primaryColor);
     letter-spacing: .2em;

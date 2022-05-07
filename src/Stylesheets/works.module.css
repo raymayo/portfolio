@@ -1,9 +1,12 @@
 @import '../index.css';
+#projectContainer *{display:none;}
 
 #workContainer{
   display: flex;
   flex-direction:column;
 }
+
+
 
 #workContainer *{
      color: var(--primaryColor);
