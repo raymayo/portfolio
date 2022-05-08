@@ -8,7 +8,7 @@ const Browse = () => {
             <div id={browseCss.browseContainer}>
                 <div className={browseCss.linkContainer}>
                     <div className={browseCss.inlineLink}>
-                        <Link to="/work">
+                        <Link to="/works">
                             <h1>WORKS</h1>
                         </Link><span>(01)</span>
 

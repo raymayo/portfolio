@@ -6,35 +6,33 @@ const Works = () => {
     return (
         <div id={worksCss.workContainer}>
             <div id={worksCss.projectContainer}>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 1</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
+                <div className={worksCss.projBox}>
+                    <div className={worksCss.projTitle}>
+                        <h1>Uplifted</h1>
+                        <h3>Branding</h3>
+                    </div>
+                    <h1 className={worksCss.projNumber}>(01)</h1>
                 </div>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 2</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
+                <div className={worksCss.projBox}>
+                    <div className={worksCss.projTitle}>
+                        <h1>Lorem Ipsum</h1>
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <h1 className={worksCss.projNumber}>(02)</h1>
                 </div>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 3</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
+                <div className={worksCss.projBox}>
+                    <div className={worksCss.projTitle}>
+                        <h1>Lorem Ipsum</h1>
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <h1 className={worksCss.projNumber}>(03)</h1>
                 </div>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 4</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
-                </div>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 5</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
-                </div>
-                <div className={worksCss.projectCase}>
-                    <div className={worksCss.imageCase}></div>
-                    <h1 className={worksCss.projectTitle}>Title 6</h1>
-                    <h5 className={worksCss.projectSub}>subtitle</h5>
+                <div className={worksCss.projBox}>
+                    <div className={worksCss.projTitle}>
+                        <h1>Lorem Ipsum</h1>
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <h1 className={worksCss.projNumber}>(04)</h1>
                 </div>
             </div>
             <Back />

@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Organetto-Bold;
+  font-family: UltaBold SemiExp;
 }
 
 .mainTitle {
@@ -32,7 +32,7 @@
 .subtext {
   font-size: .7em;
   margin: 1em;
-  font-family: Organetto-Light;
+  font-family: Regular Ext;
 }
 
 #lowerText {
@@ -42,7 +42,7 @@
 }
 
 #lowerText h3 {
-  font-family: Organetto-Light;
+  font-family: Regular Ext;
 }
 
 #view{
@@ -54,7 +54,7 @@
   font-size: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;
-  font-family: Organetto-Light;
+  font-family: Regular Ext;
   color: var(--primaryColor);
 }
 

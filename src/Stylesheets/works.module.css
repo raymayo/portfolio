@@ -1,9 +1,10 @@
 @import '../index.css';
-#projectContainer *{display:none;}
+
 
 #workContainer{
   display: flex;
   flex-direction:column;
+  height: 100%;
 }
 
 
@@ -14,39 +15,68 @@
 
 #projectContainer{
 display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+flex-direction: column;
+height: 100%;
 justify-content: space-evenly;
-  padding-top:.52em;
+padding: 2% 2%;
 }
 
+.projTitle h1{
+  font-family: Regular Ext;
+  font-size:1em;
+}
 
-.projectCase{
-width: auto;
-height: auto;
-padding-bottom:.2em;
-margin-bottom:.5em;
+.projTitle h3{
+  font-family: Regular SemiExt;
+  font-size:.4em;
+  letter-spacing:.5em;
+  padding: 2% 0;
 
 }
 
-.imageCase{
-  background-color: #C4C4C4;
-  width:31vw;
-  height:29vh;
+.projBox{
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 3px solid var(--primaryColor);
+  align-items:center;
+  height:inherit;
   cursor: pointer;
 }
 
-.projectTitle{
-  font-size:.6em;
-  padding: .3em .3em;
-  font-family: Organetto-Regular;
+.projTitle{
+  display: flex;
+  flex-direction: column;
 }
 
-.projectSub{
-  font-size:.35em;
-  padding: .3em .5em;
-  font-family: Organetto-Light;
+.projNumber{
+  font-family: Regular SemiExt;
+  font-size:1.3em;
+  letter-spacing:.1em;
 }
 
 
 
+
+
+
+
+
+@media (min-width: 320px) and (orientation: portrait){
+  .projTitle h1{
+    font-size:2.5em;
+  }
+
+  .projTitle h3{
+
+    font-size:1.2em;
+
+  }
+
+  .projNumber{
+  font-size:2.5em;
+  }
+
+  #projectContainer{
+    padding: 0;
+  }
+}

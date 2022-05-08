@@ -39,7 +39,7 @@
   font-size: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;
-  font-family: Organetto-Light;
+  font-family: Regular Ext;
   color: var(--primaryColor);
 }
 
@@ -142,12 +142,12 @@ a {
 }
 
 .inlineLink h1 {
-  font-family: Organetto-Bold;
+  font-family: UltaBold SemiExp;
      color: var(--primaryColor);
 }
 
 .inlineLink span {
-  font-family: Organetto-Light;
+  font-family: Regular SemiExt;
      color: var(--primaryColor);
 }
 
@@ -156,7 +156,11 @@ a {
 
 @media (min-width: 320px) and (orientation: portrait) {
   #tabContainer{
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+
+  .linkContainer h1{
+    line-height: .5em;
   }
   #exit{
      margin: 10% 0;
