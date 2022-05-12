@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import homeCss from '../Stylesheets/home.module.css'
+import { motion } from 'framer-motion'
 
 
 const Home = () => {
