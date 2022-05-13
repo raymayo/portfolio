@@ -1,24 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import homeCss from '../Stylesheets/home.module.css'
 import { motion } from 'framer-motion'
+import homeCss from '../Stylesheets/home.module.css'
+
 
 
 const Home = () => {
+    const container = {
+        hidden: { opacity: 0, y: 100 },
+        show: {
+            opacity: 1, y: 0,
+            transition: {
+                staggerChildren: 0.25, ease: 'easeInOut', type: 'spring'
+            }
+        }
+    }
+
+    const item = {
+        hidden: { opacity: 0, y: 100 },
+        show: { opacity: 1, y: 0 }
+    }
     return (
         <div id={homeCss.homeContainer}>
-            <div id={homeCss.mainContent}>
-                <h3 className={homeCss.subtext}>PORTFOLIO-2022</h3>
-                <h1 className={homeCss.mainTitle}>RAY</h1>
+            <motion.div id={homeCss.mainContent}
+
+                variants={container}
+                initial="hidden"
+                animate="show">
+
+                <motion.h3 className={homeCss.subtext}>PORTFOLIO-2022</motion.h3>
+                <motion.h1 className={homeCss.mainTitle} variants={item}>RAY</motion.h1>
                 <br />
-                <h1 className={homeCss.mainTitle}>MAYO</h1>
+                <motion.h1 className={homeCss.mainTitle} variants={item}>MAYO</motion.h1>
                 <br />
-                <h1 className={homeCss.mainTitle}>STUDIO</h1>
+                <motion.h1 className={homeCss.mainTitle} variants={item}>STUDIO</motion.h1>
                 <div id={homeCss.lowerText}>
-                    <h3>RAY MAYO</h3>
-                    <h3>GRAPHIC DESIGN / WEB DEVELOPMENT</h3>
+                    <motion.h3>RAY MAYO</motion.h3>
+                    <motion.h3>GRAPHIC DESIGN / WEB DEVELOPMENT</motion.h3>
                 </div>
-            </div>
+            </motion.div>
             <div id={homeCss.view}>
                 <h1><Link to="/browse">VIEW</Link></h1>
             </div>
