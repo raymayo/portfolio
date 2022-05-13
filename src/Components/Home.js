@@ -7,18 +7,18 @@ import homeCss from '../Stylesheets/home.module.css'
 
 const Home = () => {
     const container = {
-        hidden: { opacity: 0, y: 100 },
+        hidden: { y: 100 },
         show: {
-            opacity: 1, y: 0,
+            y: 0,
             transition: {
-                staggerChildren: 0.25, ease: 'easeInOut', type: 'spring'
+                staggerChildren: 0.1, ease: 'easeInOut', type: 'spring'
             }
         }
     }
 
     const item = {
         hidden: { opacity: 0, y: 100 },
-        show: { opacity: 1, y: 0 }
+        show: { opacity: 1, y: 0, transition: { ease: 'easeInOut' } }
     }
     return (
         <div id={homeCss.homeContainer}>
