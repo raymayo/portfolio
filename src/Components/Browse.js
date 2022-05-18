@@ -15,7 +15,7 @@ const Browse = () => {
     }
 
     const links = {
-        hidden: { opacity: 0, x: -100 },
+        hidden: { opacity: 0, x: -40 },
         show: { opacity: 1, x: 0, transition: { ease: 'easeInOut' } }
     }
     return (

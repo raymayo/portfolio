@@ -7,7 +7,7 @@ import homeCss from '../Stylesheets/home.module.css'
 
 const Home = () => {
     const container = {
-        hidden: { y: 100 },
+        hidden: { y: 20 },
         show: {
             y: 0,
             transition: {
@@ -17,7 +17,7 @@ const Home = () => {
     }
 
     const item = {
-        hidden: { opacity: 0, y: 100 },
+        hidden: { opacity: 0, y: 40 },
         show: { opacity: 1, y: 0, transition: { ease: 'easeInOut' } }
     }
     return (
@@ -34,10 +34,10 @@ const Home = () => {
                 <motion.h1 className={homeCss.mainTitle} variants={item}>MAYO</motion.h1>
                 <br />
                 <motion.h1 className={homeCss.mainTitle} variants={item}>STUDIO</motion.h1>
-                <div id={homeCss.lowerText}>
-                    <motion.h3>RAY MAYO</motion.h3>
-                    <motion.h3>GRAPHIC DESIGN / WEB DEVELOPMENT</motion.h3>
-                </div>
+                <motion.div id={homeCss.lowerText} variants={item}>
+                    <h3>RAY MAYO</h3>
+                    <h3>GRAPHIC DESIGN / WEB DEVELOPMENT</h3>
+                </motion.div>
             </motion.div>
             <div id={homeCss.view}>
                 <h1><Link to="/browse">VIEW</Link></h1>

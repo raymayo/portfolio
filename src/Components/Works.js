@@ -16,7 +16,7 @@ const Works = () => {
     }
 
     const views = {
-        hidden: { opacity: 0, y: -100 },
+        hidden: { opacity: 0, y: -60 },
         show: {
             opacity: 1, y: 0, transition: {
                 ease: 'easeInOut'

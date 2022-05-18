@@ -160,7 +160,7 @@ a {
   }
 
   .linkContainer h1{
-    line-height: .5em;
+    padding: 2% 0;
   }
   #exit{
      margin: 10% 0;
