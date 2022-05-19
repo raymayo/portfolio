@@ -8,20 +8,25 @@ const Browse = () => {
     const browseBox = {
         hidden: { opacity: 0 },
         show: {
-            opacity: 1, transition: {
-                staggerChildren: 0.1
-            }
-        }
+            opacity: 1, transition: { staggerChildren: 0.1 }
+        },
+        exit: { transition: { staggerChildren: 0.1, ease: 'easeOut', type: 'spring' } }
     }
 
     const links = {
         hidden: { opacity: 0, x: -40 },
-        show: { opacity: 1, x: 0, transition: { ease: 'easeInOut' } }
+        show: { opacity: 1, x: 0, transition: { ease: 'easeInOut' } },
+        exit: { opacity: 0, x: 40, transition: { ease: 'easeInOut' } }
     }
     return (
-        <div id={browseCss.tabContainer}>
+        <motion.div id={browseCss.tabContainer}>
             <div id={browseCss.browseContainer}>
-                <motion.div className={browseCss.linkContainer} variants={browseBox} initial={'hidden'} animate={'show'}>
+                <motion.div className={browseCss.linkContainer}
+                    variants={browseBox}
+                    initial='hidden'
+                    animate='show'
+                    exit='exit'
+                >
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/works">
@@ -49,7 +54,7 @@ const Browse = () => {
             <div id={browseCss.exit}>
                 <h1><Link to="/portfolio">EXIT</Link></h1>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

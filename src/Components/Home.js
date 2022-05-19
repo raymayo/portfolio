@@ -8,29 +8,29 @@ import homeCss from '../Stylesheets/home.module.css'
 
 const Home = () => {
     const container = {
-        hidden: { y: 20 },
+        hidden: { opacity: 0 },
         show: {
-            y: 0,
-            transition: {
-                staggerChildren: 0.1, ease: 'easeInOut', type: 'spring',
-            }
-        }
+            opacity: 1, transition: { staggerChildren: 0.1, ease: 'easeInOut', type: 'spring' },
+        },
+        exit: { transition: { staggerChildren: 0.1, ease: 'easeOut', type: 'spring' } }
     }
 
     const item = {
-        hidden: { opacity: 0, y: 40 },
-        show: { opacity: 1, y: 0, transition: { ease: 'easeInOut' } }
+        hidden: { opacity: 0, x: -40 },
+        show: { opacity: 1, x: 0, transition: { ease: 'easeInOut' } },
+        exit: { opacity: 0, x: 40, transition: { ease: 'easeInOut' } }
     }
     return (
 
-        <div id={homeCss.homeContainer}>
+        <motion.div id={homeCss.homeContainer} >
             <motion.div id={homeCss.mainContent}
 
                 variants={container}
                 initial="hidden"
-                animate="show">
+                animate="show"
+                exit='exit'>
 
-                <motion.h3 className={homeCss.subtext}>PORTFOLIO-2022</motion.h3>
+                <motion.h3 className={homeCss.subtext} variants={item}>PORTFOLIO-2022</motion.h3>
                 <motion.h1 className={homeCss.mainTitle} variants={item}>RAY</motion.h1>
                 <br />
                 <motion.h1 className={homeCss.mainTitle} variants={item}>MAYO</motion.h1>
@@ -44,7 +44,7 @@ const Home = () => {
             <div id={homeCss.view}>
                 <h1><Link to="/browse">VIEW</Link></h1>
             </div>
-        </div>
+        </motion.div>
 
     )
 }
