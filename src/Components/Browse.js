@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import browseCss from '../Stylesheets/browse.module.css'
-import AnimatedPage from './AnimatedPage.js'
 
 const Browse = () => {
 
@@ -20,39 +19,37 @@ const Browse = () => {
         show: { opacity: 1, x: 0, transition: { ease: 'easeInOut' } }
     }
     return (
-        <AnimatedPage>
-            <div id={browseCss.tabContainer}>
-                <div id={browseCss.browseContainer}>
-                    <motion.div className={browseCss.linkContainer} variants={browseBox} initial={'hidden'} animate={'show'}>
+        <div id={browseCss.tabContainer}>
+            <div id={browseCss.browseContainer}>
+                <motion.div className={browseCss.linkContainer} variants={browseBox} initial={'hidden'} animate={'show'}>
 
-                        <motion.div className={browseCss.inlineLink} variants={links}>
-                            <Link to="/works">
-                                <h1>WORKS</h1>
-                            </Link><span>(01)</span>
+                    <motion.div className={browseCss.inlineLink} variants={links}>
+                        <Link to="/works">
+                            <h1>WORKS</h1>
+                        </Link><span>(01)</span>
 
-                        </motion.div>
-                        <motion.div className={browseCss.inlineLink} variants={links}>
-                            <Link to="/about">
-                                <h1>ABOUT</h1>
-                            </Link><span>(02)</span>
-                        </motion.div>
-                        <motion.div className={browseCss.inlineLink} variants={links}>
-                            <Link to="/social">
-                                <h1>SOCIALS</h1>
-                            </Link><span>(03)</span>
-                        </motion.div>
-                        <motion.div className={browseCss.inlineLink} variants={links}>
-                            <Link to="/contact">
-                                <h1>CONTACT</h1>
-                            </Link><span>(04)</span>
-                        </motion.div>
                     </motion.div>
-                </div>
-                <div id={browseCss.exit}>
-                    <h1><Link to="/portfolio">EXIT</Link></h1>
-                </div>
+                    <motion.div className={browseCss.inlineLink} variants={links}>
+                        <Link to="/about">
+                            <h1>ABOUT</h1>
+                        </Link><span>(02)</span>
+                    </motion.div>
+                    <motion.div className={browseCss.inlineLink} variants={links}>
+                        <Link to="/social">
+                            <h1>SOCIALS</h1>
+                        </Link><span>(03)</span>
+                    </motion.div>
+                    <motion.div className={browseCss.inlineLink} variants={links}>
+                        <Link to="/contact">
+                            <h1>CONTACT</h1>
+                        </Link><span>(04)</span>
+                    </motion.div>
+                </motion.div>
             </div>
-        </AnimatedPage>
+            <div id={browseCss.exit}>
+                <h1><Link to="/portfolio">EXIT</Link></h1>
+            </div>
+        </div>
     )
 }
 
