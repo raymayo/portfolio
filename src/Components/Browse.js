@@ -51,9 +51,13 @@ const Browse = () => {
                     </motion.div>
                 </motion.div>
             </div>
-            <div id={browseCss.exit}>
+            <motion.div id={browseCss.exit}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
                 <h1><Link to="/portfolio">EXIT</Link></h1>
-            </div>
+            </motion.div>
         </motion.div>
     )
 }

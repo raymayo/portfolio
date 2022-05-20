@@ -49,7 +49,13 @@ const Works = () => {
                     <h1 className={worksCss.projNumber}>(04)</h1>
                 </motion.div>
             </motion.div>
-            <Back />
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
+                <Back />
+            </motion.div>
         </div>
     )
 }

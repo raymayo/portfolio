@@ -22,7 +22,7 @@ const Home = () => {
     }
     return (
 
-        <motion.div id={homeCss.homeContainer} >
+        <motion.div id={homeCss.homeContainer}>
             <motion.div id={homeCss.mainContent}
 
                 variants={container}
@@ -41,9 +41,13 @@ const Home = () => {
                     <h3>GRAPHIC DESIGN / WEB DEVELOPMENT</h3>
                 </motion.div>
             </motion.div>
-            <div id={homeCss.view}>
+            <motion.div id={homeCss.view}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
                 <h1><Link to="/browse">VIEW</Link></h1>
-            </div>
+            </motion.div>
         </motion.div>
 
     )
