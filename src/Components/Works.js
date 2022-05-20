@@ -7,26 +7,19 @@ const Works = () => {
 
     const workBox = {
         hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
-        }
+        show: { opacity: 1, transition: { staggerChildren: 0.1 } },
+        exit: { opacity: 1, transition: { staggerChildren: 0.1, staggerDirection: -1, ease: 'easeInOut' } }
     }
 
     const views = {
         hidden: { opacity: 0, y: -60 },
-        show: {
-            opacity: 1, y: 0, transition: {
-                ease: 'easeInOut'
-            }
-        },
+        show: { opacity: 1, y: 0, transition: { ease: 'easeInOut' }, },
+        exit: { opacity: 0, y: -60, transition: { ease: 'easeInOut' } }
     }
 
     return (
         <div id={worksCss.workContainer}>
-            <motion.div id={worksCss.projectContainer} variants={workBox} initial={'hidden'} animate={'show'}>
+            <motion.div id={worksCss.projectContainer} variants={workBox} initial='hidden' animate='show' exit='exit'>
                 <motion.div className={worksCss.projBox} variants={views}>
                     <div className={worksCss.projTitle}>
                         <h1>Uplifted</h1>
