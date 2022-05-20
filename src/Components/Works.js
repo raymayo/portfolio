@@ -12,9 +12,9 @@ const Works = () => {
     }
 
     const views = {
-        hidden: { opacity: 0, y: -60 },
+        hidden: { opacity: 0, y: -50 },
         show: { opacity: 1, y: 0, transition: { ease: 'easeInOut' }, },
-        exit: { opacity: 0, y: -60, transition: { ease: 'easeInOut' } }
+        exit: { opacity: 0, y: -50, transition: { ease: 'easeInOut' } }
     }
 
     return (
