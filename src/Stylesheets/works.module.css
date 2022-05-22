@@ -23,13 +23,13 @@ padding: 2% 2%;
 
 .projTitle h1{
   font-family: visby_bold;
-  font-size:1em;
+  font-size:1.5em;
 }
 
 .projTitle h3{
   font-family: visby_medium;
-  font-size:.4em;
-  letter-spacing:.5em;
+  font-size:.5em;
+  letter-spacing:.25em;
   padding: 2% 0;
 
 }
@@ -50,8 +50,7 @@ padding: 2% 2%;
 
 .projNumber{
   font-family: visby_bold;
-  font-size:1.3em;
-  letter-spacing:.1em;
+  font-size:1.8em;
 }
 
 

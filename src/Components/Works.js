@@ -23,7 +23,7 @@ const Works = () => {
                 <motion.div className={worksCss.projBox} variants={views}>
                     <div className={worksCss.projTitle}>
                         <h1>Uplifted</h1>
-                        <h3>Branding, Socials</h3>
+                        <h3>Branding, Marketing</h3>
                     </div>
                     <h1 className={worksCss.projNumber}>01</h1>
                 </motion.div>
