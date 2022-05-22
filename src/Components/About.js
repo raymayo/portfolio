@@ -7,8 +7,8 @@ const About = () => {
         <div id={aboutCss.aboutContainer}>
             <div id={aboutCss.content}>
                 <div id={aboutCss.intro}>
-                    <h1>I’m <b>Ray Mayo</b></h1>
-                    <h2>A 20 y/o self-taught graphic designer *slash* front end developer based in the Philippines.</h2>
+                    <h1>HELLO</h1>
+                    <h2>I'm a 20 y/o self-taught graphic designer & front end developer based in the Philippines.</h2>
                 </div>
                 <div id={aboutCss.skillsContainer}>
                     <div className={aboutCss.skillsTable}>
