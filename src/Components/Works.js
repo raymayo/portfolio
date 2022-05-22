@@ -25,28 +25,28 @@ const Works = () => {
                         <h1>Uplifted</h1>
                         <h3>Branding, Socials</h3>
                     </div>
-                    <h1 className={worksCss.projNumber}>(01)</h1>
+                    <h1 className={worksCss.projNumber}>01</h1>
                 </motion.div>
                 <motion.div className={worksCss.projBox} variants={views}>
                     <div className={worksCss.projTitle}>
                         <h1>Graphic Design</h1>
                         <h3>Personal, Experimental</h3>
                     </div>
-                    <h1 className={worksCss.projNumber}>(02)</h1>
+                    <h1 className={worksCss.projNumber}>02</h1>
                 </motion.div>
                 <motion.div className={worksCss.projBox} variants={views}>
                     <div className={worksCss.projTitle}>
                         <h1>UI Designs</h1>
                         <h3>Personal, Case Study</h3>
                     </div>
-                    <h1 className={worksCss.projNumber}>(03)</h1>
+                    <h1 className={worksCss.projNumber}>03</h1>
                 </motion.div>
                 <motion.div className={worksCss.projBox} variants={views}>
                     <div className={worksCss.projTitle}>
                         <h1>Lorem</h1>
                         <h3>Personal, Branding</h3>
                     </div>
-                    <h1 className={worksCss.projNumber}>(04)</h1>
+                    <h1 className={worksCss.projNumber}>04</h1>
                 </motion.div>
             </motion.div>
             <motion.div

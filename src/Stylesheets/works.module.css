@@ -22,12 +22,12 @@ padding: 2% 2%;
 }
 
 .projTitle h1{
-  font-family: Regular Ext;
+  font-family: visby_bold;
   font-size:1em;
 }
 
 .projTitle h3{
-  font-family: Regular SemiExt;
+  font-family: visby_medium;
   font-size:.4em;
   letter-spacing:.5em;
   padding: 2% 0;
@@ -49,7 +49,7 @@ padding: 2% 2%;
 }
 
 .projNumber{
-  font-family: Regular SemiExt;
+  font-family: visby_bold;
   font-size:1.3em;
   letter-spacing:.1em;
 }
