@@ -27,28 +27,32 @@ const Browse = () => {
                     animate='show'
                     exit='exit'
                 >
-
-                    <motion.div className={browseCss.inlineLink} variants={links}>
-                        <Link to="/works">
-                            <h1>WORKS</h1>
-                        </Link><span>(01)</span>
-
-                    </motion.div>
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/about">
                             <h1>ABOUT</h1>
                         </Link><span>(02)</span>
                     </motion.div>
+
                     <motion.div className={browseCss.inlineLink} variants={links}>
-                        <Link to="/social">
-                            <h1>SOCIALS</h1>
-                        </Link><span>(03)</span>
+                        <Link to="/works">
+                            <h1>DESIGNS</h1>
+                        </Link><span>(01)</span>
                     </motion.div>
+
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/contact">
-                            <h1>CONTACT</h1>
+                            <h1>WEBDEV</h1>
                         </Link><span>(04)</span>
                     </motion.div>
+
+
+
+                    <motion.div className={browseCss.inlineLink} variants={links}>
+                        <Link to="/social">
+                            <h1>CONTACT</h1>
+                        </Link><span>(03)</span>
+                    </motion.div>
+
                 </motion.div>
             </div>
             <motion.div id={browseCss.exit}

@@ -10,7 +10,7 @@ import { saveAs } from 'file-saver';
 const Navbar = () => {
 
     const downloadImage = () => {
-        saveAs('https://i.ibb.co/1bM8qqN/Ray-Mayo-Resume.jpg', 'Ray-Mayo-Resume.jpg')
+        saveAs('https://drive.google.com/uc?export=download&id=1-3vChwIsNdEgZhNLUu9mq8g28cG5TIz2');
     }
 
     return (
