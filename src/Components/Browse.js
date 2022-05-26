@@ -34,13 +34,13 @@ const Browse = () => {
                     </motion.div>
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
-                        <Link to="/works">
+                        <Link to="/design">
                             <h1>DESIGNS</h1>
                         </Link><span>(01)</span>
                     </motion.div>
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
-                        <Link to="/contact">
+                        <Link to="/webdev">
                             <h1>WEBDEV</h1>
                         </Link><span>(04)</span>
                     </motion.div>
@@ -48,7 +48,7 @@ const Browse = () => {
 
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
-                        <Link to="/social">
+                        <Link to="/contact">
                             <h1>CONTACT</h1>
                         </Link><span>(03)</span>
                     </motion.div>
