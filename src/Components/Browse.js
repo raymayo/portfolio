@@ -25,32 +25,30 @@ const Browse = () => {
                     variants={browseBox}
                     initial='hidden'
                     animate='show'
-                    exit='exit'
-                >
+                    exit='exit'>
+
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/about">
                             <h1>ABOUT</h1>
-                        </Link><span>(02)</span>
+                        </Link><span>(01)</span>
                     </motion.div>
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/design">
                             <h1>DESIGNS</h1>
-                        </Link><span>(01)</span>
+                        </Link><span>(02)</span>
                     </motion.div>
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/webdev">
                             <h1>WEBDEV</h1>
-                        </Link><span>(04)</span>
+                        </Link><span>(03)</span>
                     </motion.div>
-
-
 
                     <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/contact">
                             <h1>CONTACT</h1>
-                        </Link><span>(03)</span>
+                        </Link><span>(04)</span>
                     </motion.div>
 
                 </motion.div>

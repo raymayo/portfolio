@@ -5,8 +5,6 @@ import Loader from './Components/Loader';
 import { BrowserRouter } from "react-router-dom";
 
 
-
-
 export default function App() {
     const [loading, setLoading] = useState(false);
     let vh = window.innerHeight * 0.01;

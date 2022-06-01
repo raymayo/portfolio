@@ -5,6 +5,7 @@
     flex-direction:column;
     height: 100%;
     width: 100%;
+    border: 1px solid red;
 }
 #aboutContainer *{
     color: var(--primaryColor);
@@ -14,6 +15,7 @@
     height: 100%;
     display: flex;
     flex-direction:row;
+    border: 1px solid blue;
 }
 
 #leftContainer{
@@ -21,16 +23,17 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    border: solid 1px blue;
+    border: 1px solid salmon;
 }
 
 #infoBox{
-    height: 75%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    border: solid 1px chartreuse;
+    justify-content: space-between;
+    border: 1px solid magenta;
+    padding: 10%;
 }
 
 #titleContainer{
@@ -40,58 +43,61 @@
     display: flex;
     flex-direction: column;
     justify-content:center;
-    border: solid 1px seagreen;
+    border: 1px solid sandybrown;
 }
 
 #descBox{
-    margin-top:2.5%;
-    margin-left: 1%;
     font-family:visby_medium;
     font-size:.5em;
     letter-spacing: .25em;
-    border: solid 1px magenta;
-
+    border: 1px solid aqua;
 }
 
 .svgLink{
     fill: var(--primaryColor);
-    width:4%;
+    width:5%;
     height:auto;
-    border: solid 1px salmon;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-right: 4%;
+    border: 1px solid red;
 }
 
 #rightContainer{
     display: flex;
     width: 50%;
     justify-content: center;
-    border: solid 1px blue;
     align-items: center;
+    border: 1px solid red;
 }
 
 #skillBox{
-    width: 60%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    border: solid 1px chartreuse;
+    justify-content: space-between;
+    border: 1px solid blue;
+    padding: 10%;
 }
 
 #toolsTitle{
     font-family: visby_bold;
-    font-size:2em;
-    border: solid 1px seagreen;
+    font-size:3em;
+    padding-bottom: 2%;
+    border: 1px solid mediumaquamarine;
+    line-height:1em;
+}
 
+.skillsTable{
+    padding-bottom:6.8% ;
 }
 
 .skillsTable h4{
-    font-size:.7em;
+    font-size:.8em;
    font-family: visby_medium;
    line-height: 1.5em;
-   border: solid 1px magenta;
-
+    padding: 2% 0;
+    border: 1px solid magenta;
 }
 
 .skillsTitle{
@@ -100,6 +106,74 @@
      display: flex;
      justify-content: space-between;
      border-bottom: 3px solid var(--primaryColor);
+     padding: 2% 0;
 }
 
 
+@media (min-width: 320px) and (orientation: portrait){
+
+
+#content{
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#leftContainer{
+   width: 100%;
+   height: 100%;
+}
+
+#rightContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#infoBox{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#titleContainer{
+    flex-direction: row;
+    font-size:4em;
+}
+
+#descBox{
+    font-size:.9em;
+}
+
+.svgLink{
+    width:6%;
+}
+
+#skillBox{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#linkContainer{
+    display: flex;
+    justify-content:center;
+}
+
+#toolsTitle{
+    font-size:4em;
+}
+
+.skillsTitle{
+    font-size:1em;
+}
+
+.skillsTable h4{
+    font-size:1.5em;
+}
+
+
+
+}
