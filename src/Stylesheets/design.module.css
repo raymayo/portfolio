@@ -42,7 +42,6 @@ padding: 2% 2%;
   height:inherit;
   cursor: pointer;
 }
-
 .projTitle{
   display: flex;
   flex-direction: column;

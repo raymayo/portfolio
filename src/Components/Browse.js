@@ -45,11 +45,11 @@ const Browse = () => {
                         </Link><span>(03)</span>
                     </motion.div>
 
-                    <motion.div className={browseCss.inlineLink} variants={links}>
+                    {/* <motion.div className={browseCss.inlineLink} variants={links}>
                         <Link to="/contact">
                             <h1>CONTACT</h1>
                         </Link><span>(04)</span>
-                    </motion.div>
+                    </motion.div> */}
 
                 </motion.div>
             </div>
